@@ -6,8 +6,8 @@ number_of_attemps = 7
 found_letters = []
 
 def set_game_word():
-    number_of_words = len(words) - 1
-    i_word = round(random.random() * number_of_words)
+    number_of_words = len(words)
+    i_word = random.randrange(0,  number_of_words)
 
     for l in words[i_word]:
         found_letters.append("_")
